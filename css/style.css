@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: #ffffff;
+  color: #f8cb00;
 }
 
 .navbar .navbar-nav a::after {
@@ -165,7 +165,7 @@ main.content .cta:hover {
 
 .about h2 {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -211,8 +211,8 @@ section#layanan {
 
 section#layanan h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.6rem;
+  margin-bottom: 1.7rem;
+  font-size: 3rem;
 }
 
 .product-list {
@@ -283,14 +283,14 @@ section#layanan h2 {
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
   #hamburger-menu {
     display: inline-block;
     color: #000;
   }
-  .navbar .hamburger-menu a:hover::after {
-    color: #fff;
+  .navbar .hamburger-menu a::after {
+    color: #ffd000;
   }
   .navbar .navbar-nav {
     position: absolute;
@@ -369,7 +369,11 @@ section#layanan h2 {
 
   .about .row .content h3 {
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+  }
+  .about .row .content p {
+    margin-top: 1rem;
+    font-size: 2.2rem;
   }
   .layanan h2 {
     padding: 3.2rem;
@@ -411,10 +415,10 @@ section#layanan h2 {
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
   .overlay .content h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   .logo-image {
@@ -422,6 +426,12 @@ section#layanan h2 {
   }
   .about .row {
     flex-wrap: wrap;
+  }
+  .about .row .content h3 {
+    font-size: 3rem;
+  }
+  .about .row .content p {
+    font-size: 2rem;
   }
   .hero .content {
     padding: 1.4rem 7%;
