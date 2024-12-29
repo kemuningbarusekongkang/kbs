@@ -44,8 +44,8 @@ body {
   font-style: italic;
 }
 
-.navbar .navbar-logo span {
-  color: #fff;
+.navbar .navbar-logo {
+  color: #000000;
 }
 
 .navbar-nav a {
@@ -411,14 +411,12 @@ section#layanan h2 {
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 45%;
   }
   .overlay .content h1 {
     font-size: 3.5rem;
   }
-  .navbar .navbar-logo {
-    font-size: 2rem;
-  }
+
   .logo-image {
     width: 45px;
   }
