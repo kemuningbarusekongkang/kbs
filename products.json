@@ -1,0 +1,167 @@
+[
+  {
+    "code": "toyota-fortuner-kbs",
+    "name": "Daihatsu TERIOS",
+    "prices": {
+      "daily": 0,
+      "monthly": 10000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner-kbs.jpg"
+  },
+  {
+    "code": "toyota-hilux-kbs",
+    "name": "Toyota Hilux",
+    "prices": {
+      "daily": 900000,
+      "monthly": 23000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hilux-kbs.jpg"
+  },
+  {
+    "code": "toyota-innova-kbs",
+    "name": "Toyota Innova",
+    "prices": {
+      "daily": 600000,
+      "monthly": 13000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-innova-kbs.jpg"
+  },
+  {
+    "code": "bus-30-kbs",
+    "name": "BUS 30",
+    "prices": {
+      "daily": 0,
+      "monthly": 55000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-30-kbs.jpg"
+  },
+  {
+    "code": "bus-50-kbs",
+    "name": "BUS 50",
+    "prices": {
+      "daily": 0,
+      "monthly": 70000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-50-kbs.jpg"
+  },
+  {
+    "code": "toyota-fortuner-kbs",
+    "name": "Toyota Fortuner",
+    "prices": {
+      "daily": 0,
+      "monthly": 27000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner-kbs.jpg"
+  },
+  {
+    "code": "toyota-hiace-kbs",
+    "name": "Toyota Hiace",
+    "prices": {
+      "daily": 0,
+      "monthly": 26000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hiace-kbs.jpg"
+  },
+  {
+    "code": "tangki-air-kbs",
+    "name": "Truck Tangki Air",
+    "prices": {
+      "daily": 0,
+      "monthly": 26000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/tangki-air-kbs.jpg"
+  },
+  {
+    "code": "tangki-bahan-bakar-kbs",
+    "name": "Truck Tangki Bahan Bakar",
+    "prices": {
+      "daily": 0,
+      "monthly": 26000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/tangki-bahan-bakar-kbs.jpg"
+  },
+  {
+    "code": "toyota-avanza-kbs",
+    "name": "Toyota Avanza",
+    "prices": {
+      "daily": 450000,
+      "monthly": 0
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-avanza-kbs.jpg"
+  },
+  {
+    "code": "toyota-fortuner-kbs",
+    "name": "Toyota Fortuner",
+    "prices": {
+      "daily": 500000,
+      "monthly": 15000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner-kbs.jpg"
+  },
+  {
+    "code": "toyota-hilux-kbs",
+    "name": "Toyota Hilux",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hilux-kbs.jpg"
+  },
+  {
+    "code": "toyota-innova-kbs",
+    "name": "Toyota Innova",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-innova-kbs.jpg"
+  },
+  {
+    "code": "bus-30-kbs",
+    "name": "BUS 30",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-30-kbs.jpg"
+  },
+  {
+    "code": "bus-50-kbs",
+    "name": "BUS 50",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-50-kbs.jpg"
+  }
+]

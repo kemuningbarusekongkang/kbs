@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemuning Baru Sekongkang</title>
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Navbar Start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="../img/logo-kbs.png" alt="Logo KBS" class="logo-image" />
+        PT. Kemuning Baru <span>Sekongkang</span></a
+      >
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#layanan">Layanan Sewa</a>
+        <a
+          href="https://wa.me/6281235700391?text=Halo%20%5BKBS%5D!%20Saya%20tertarik%20dengan%20layanan%20Anda%20di%20bidang:%0A-%20Sewa%20Mobil%20(Rent%20Car)%0A-%20Supplier%20Manpower%0A-%20Penyediaan%20Spare%20Part.%0A%0ASaya%20ingin%20mengetahui%20lebih%20lanjut.%0AMohon%20info%20lebih%20lanjut%20tentang%20layanan%20ini.%0ATerima%20kasih!"
+          >Hubungi Kami</a
+        >
+      </div>
+      <div id="hamburger-menu">
+          <i data-feather="menu"></i
+        ></a>
+      </div>
+    </nav>
+    <!--Navbar Ends-->
+
+    <!-- Hero Sections start-->
+    <section class="hero" id="home">
+      <div class="slideshow">
+        <div
+          class="slide active"
+          style="background-image: url('img/header-bg1-kbs.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('img/header-bg2-kbs.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('img/header-bg3-kbs.jpg')"
+        ></div>
+      </div>
+      <div class="overlay">
+        <main class="content">
+          <h1>Supplier Manpower, Rent Car, Service & Penjualan Spare Part</h1>
+          <p>Untuk Informasi Lebih Lengkap</p>
+          <a
+            href="https://wa.me/6281235700391?text=Halo%20%5BKBS%5D!%20Saya%20tertarik%20dengan%20layanan%20Anda%20di%20bidang:%0A-%20Sewa%20Mobil%20(Rent%20Car)%0A-%20Supplier%20Manpower%0A-%20Penyediaan%20Spare%20Part.%0A%0ASaya%20ingin%20mengetahui%20lebih%20lanjut.%0AMohon%20info%20lebih%20lanjut%20tentang%20layanan%20ini.%0ATerima%20kasih!"
+            class="cta"
+          >
+            Hubungi Kami
+          </a>
+        </main>
+      </div>
+    </section>
+    <!-- Hero Sections end-->
+
+    <!-- About Section start-->
+    <section id="about" class="about">
+      <h2>Tentang Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami-kbs.jpeg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Memilih KBS?</h3>
+          <p>
+            Kenapa memilih KS, karna melayani penjualan spare part, cuci mobil &
+            motor, service mobil, ganti oli & ban, poles body, cat mobil semprot
+            anti karat dan body repair.
+          </p>
+          <p>
+            Untuk penawaran harga silahkan langsung menghubungi admin atau
+            langsung ke kantor kami yang beralamat di Dsn. Kemuning Ds.
+            Sekongkang Atas Kec. Sekongkang - KSB Terima Kasih 🙏
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end-->
+    <!-- Layanan Section start -->
+    <section id="layanan" class="layanan">
+      <h2>Ready For Rent</h2>
+      <div id="product-list" class="product-list"></div>
+    </section>
+
+    <script>
+      async function loadProducts() {
+        try {
+          const response = await fetch('products.json');
+          const products = await response.json();
+
+          const productList = document.getElementById('product-list');
+          productList.innerHTML = products
+            .map((product) => {
+              if (!product.availability) return ''; // Tidak tampilkan jika tidak tersedia
+
+              return `
+                <div class="product-item">
+              <img src="img/${product.code}.jpg" alt="${product.name}" />
+              <div class="content">
+                <h3>${product.name}</h3>
+                <p>Sewa Harian: ${
+                  product.prices.daily
+                    ? 'IDR ' + product.prices.daily.toLocaleString('id-ID')
+                    : 'Tidak tersedia'
+                }</p>
+                <p>Sewa Bulanan: ${
+                  product.prices.monthly
+                    ? 'IDR ' + product.prices.monthly.toLocaleString('id-ID')
+                    : 'Tidak tersedia'
+                }</p>
+                <a href="order-form.html?code=${
+                  product.code
+                }" class="order-btn">Pesan Sekarang</a>
+              </div>
+            </div>
+              `;
+            })
+            .join('');
+        } catch (error) {
+          console.error('Gagal memuat data produk:', error);
+        }
+      }
+
+      loadProducts();
+    </script>
+
+    <!-- Layanan Section end -->
+    <!-- Layanan Spare Part start -->
+
+    <!-- Layanan Section end -->
+    <!--Feather Icons-->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
+    <footer>
+      &copy; 2024 PT. Kemuning Baru Sekongkang. All rights reserved. <br />
+      <a href="https://www.yourwebsite.com" target="_blank"
+        >Visit Our Website</a
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+[
+  {
+    "code": "toyota-fortuner",
+    "name": "Toyota Fortuner",
+    "prices": {
+      "daily": 500000,
+      "monthly": 15000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner.jpg"
+  },
+  {
+    "code": "toyota-hilux",
+    "name": "Toyota Hilux",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hilux.jpg"
+  },
+  {
+    "code": "toyota-innova",
+    "name": "Toyota Innova",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-innova.jpg"
+  },
+  {
+    "code": "bus-30",
+    "name": "BUS 30",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-30.jpg"
+  },
+  {
+    "code": "bus-50",
+    "name": "BUS 50",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-50.jpg"
+  },
+  {
+    "code": "toyota-fortuner",
+    "name": "Toyota Fortuner",
+    "prices": {
+      "daily": 500000,
+      "monthly": 15000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner.jpg"
+  },
+  {
+    "code": "toyota-hilux",
+    "name": "Toyota Hilux",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hilux.jpg"
+  },
+  {
+    "code": "toyota-innova",
+    "name": "Toyota Innova",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-innova.jpg"
+  },
+  {
+    "code": "bus-30",
+    "name": "BUS 30",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-30.jpg"
+  },
+  {
+    "code": "bus-50",
+    "name": "BUS 50",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-50.jpg"
+  },
+  {
+    "code": "toyota-fortuner",
+    "name": "Toyota Fortuner",
+    "prices": {
+      "daily": 500000,
+      "monthly": 15000000
+    },
+    "availableRentalTypes": ["daily", "monthly"],
+    "availability": true,
+    "image": "img/toyota-fortuner.jpg"
+  },
+  {
+    "code": "toyota-hilux",
+    "name": "Toyota Hilux",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-hilux.jpg"
+  },
+  {
+    "code": "toyota-innova",
+    "name": "Toyota Innova",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/toyota-innova.jpg"
+  },
+  {
+    "code": "bus-30",
+    "name": "BUS 30",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-30.jpg"
+  },
+  {
+    "code": "bus-50",
+    "name": "BUS 50",
+    "prices": {
+      "daily": 400000,
+      "monthly": 12000000
+    },
+    "availableRentalTypes": ["monthly"],
+    "availability": true,
+    "image": "../img/bus-50.jpg"
+  }
+]

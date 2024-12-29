@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pesanan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      form .map-kbs {
+        flex: 1 1 45rem;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 1rem;
+      }
+
+      form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      form input,
+      form select,
+      form textarea,
+      form button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      form button {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Formulir Pesanan - PT. Kemuning Baru Sekongkang</h2>
+    <!--<a href="#" class="form-logo">
+      <img src="../img/logo-kbs.png" alt="Logo KBS" class="logo-image" />
+    </a>-->
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Nama Lengkap:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan nama lengkap Anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone">Nomor Telepon:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Masukkan nomor telepon Anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="service">Pilih Layanan:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Pilih Layanan --</option>
+          <option value="Sewa Mobil">Sewa Mobil (Rent Car)</option>
+          <option value="Supplier Manpower">Supplier Manpower</option>
+          <option value="Spare Part">Penyediaan Spare Part</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="jenis">Jenis Layanan:</label>
+        <select id="jenis" name="jenis" required>
+          <option value="">-- Jenis Layanan --</option>
+          <option value="Harian">Sewa Harian</option>
+          <option value="Bulanan">Sewa Bulanan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="unit">Jumlah Pesanan:</label>
+        <input
+          type="number"
+          id="unit"
+          name="unit"
+          placeholder="Masukkan Jumlah Pesanan Anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="message">Pesan Tambahan:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tambahkan pesan atau catatan khusus (opsional)"
+        ></textarea>
+      </div>
+      <button type="button" id="submitBtn">Pesan Sekarang</button>
+      <div class="form-group">
+        <label for="lokasi">Lokasi Kami :</label>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2168.151749894972!2d116.75966082911415!3d-8.957303563323803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dccf372738bb10d%3A0x4450bb3d5e14ea2c!2sJl.%20Maluk%20-%20Sekongkang%2C%20Kemuning%2C%20Kec.%20Sekongkang%2C%20Kabupaten%20Sumbawa%20Barat%2C%20Nusa%20Tenggara%20Bar.%2084457!5e1!3m2!1sid!2sid!4v1735451224567!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map-kbs"
+      ></iframe>
+    </form>
+    <script>
+      document
+        .getElementById('submitBtn')
+        .addEventListener('click', function () {
+          const name = document.getElementById('name').value.trim();
+          const phone = document.getElementById('phone').value.trim();
+          const service = document.getElementById('service').value.trim();
+          const jenis = document.getElementById('jenis').value.trim();
+          const unit = document.getElementById('unit').value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          if (!name || !phone || !service || !jenis || !unit) {
+            alert('Harap isi semua bidang yang wajib!');
+            return;
+          }
+
+          const adminNumber = '6281235700391';
+          const whatsappURL = `https://wa.me/${adminNumber}?text=${encodeURIComponent(
+            `Halo Admin KBS, saya ingin memesan dengan rincian berikut:\n\n` +
+              `Nama           : ${name}\n` +
+              `Nomor Telepon  : ${phone}\n` +
+              `Layanan        : ${service}\n` +
+              `Jenis Layanan  : ${jenis}\n` +
+              `Jumlah Pesanan : ${unit}\n` +
+              `Pesan Tambahan : ${message || 'Tidak ada'}\n\n` +
+              `Mohon dibantu proses selanjutnya ya, terima kasih \n`
+          )}`;
+
+          console.log(whatsappURL); // Debugging
+          location.href = whatsappURL; // Ganti window.open dengan location.href
+        });
+    </script>
+  </body>
+</html>
