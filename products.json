@@ -121,47 +121,14 @@
     "image": "img/toyota-fortuner-kbs.jpg"
   },
   {
-    "code": "toyota-hilux-kbs",
-    "name": "Toyota Hilux",
-    "prices": {
-      "daily": 400000,
-      "monthly": 12000000
-    },
-    "availableRentalTypes": ["monthly"],
-    "availability": true,
-    "image": "../img/toyota-hilux-kbs.jpg"
-  },
-  {
     "code": "toyota-innova-kbs",
     "name": "Toyota Innova",
     "prices": {
-      "daily": 400000,
+      "daily": 600000,
       "monthly": 12000000
     },
     "availableRentalTypes": ["monthly"],
     "availability": true,
     "image": "../img/toyota-innova-kbs.jpg"
-  },
-  {
-    "code": "bus-30-kbs",
-    "name": "BUS 30",
-    "prices": {
-      "daily": 400000,
-      "monthly": 12000000
-    },
-    "availableRentalTypes": ["monthly"],
-    "availability": true,
-    "image": "../img/bus-30-kbs.jpg"
-  },
-  {
-    "code": "bus-50-kbs",
-    "name": "BUS 50",
-    "prices": {
-      "daily": 400000,
-      "monthly": 12000000
-    },
-    "availableRentalTypes": ["monthly"],
-    "availability": true,
-    "image": "../img/bus-50-kbs.jpg"
   }
 ]
